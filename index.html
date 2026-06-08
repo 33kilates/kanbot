@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanbot — Automatize o recrutamento e qualificação de revendedoras no WhatsApp com IA. CRM Kanban visual, funil de perguntas com pontuação automática e inteligência artificial.">
+  <meta name="keywords" content="Kanbot, CRM WhatsApp, automação WhatsApp, recrutamento revendedoras, qualificação de leads, inteligência artificial, kanban, semijoias">
+  <meta name="author" content="Kanbot">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kanbot — Qualificação Inteligente de Revendedoras no WhatsApp">
+  <meta property="og:description" content="Pare de perder tempo com leads desqualificadas. Automatize seu recrutamento com IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kanbot.com.br">
+
+  <title>Kanbot — Qualificação Inteligente de Revendedoras no WhatsApp com IA</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon (usando o logo) -->
+  <link rel="icon" type="image/png" href="assets/logo_cropped.png">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#" class="header__logo">
+        <img src="assets/logo_cropped.png" alt="Kanbot Logo" id="header-logo">
+      </a>
+      <nav class="header__nav" id="nav">
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#para-quem">Para Quem É</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Resultados</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#agendar" class="header__cta">Agendar Demonstração</a>
+      </nav>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- HERO -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg-effects">
+      <div class="hero__orb hero__orb--1"></div>
+      <div class="hero__orb hero__orb--2"></div>
+      <div class="hero__orb hero__orb--3"></div>
+      <div class="hero__grid-pattern"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          Automação com Inteligência Artificial
+        </div>
+
+        <h1 class="hero__title">
+          Transforme seu WhatsApp numa <span class="gradient-text">Máquina Automática</span> de Recrutar Revendedoras
+        </h1>
+
+        <p class="hero__subtitle">
+          O Kanbot qualifica seus leads de tráfego pago 24 horas por dia, separa os curiosos das revendedoras ideais e blinda seu número contra bloqueios. Piloto automático real para o seu negócio de consignado.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#agendar" class="btn-primary" id="hero-cta-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Agendar Demonstração Gratuita
+          </a>
+          <a href="#como-funciona" class="btn-secondary" id="hero-cta-secondary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Como Funciona
+          </a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-count="300">0</div>
+            <div class="hero__stat-label">Leads Qualificadas/mês</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-count="97">0</div>
+            <div class="hero__stat-label">% Satisfação</div>
+          </div>
+          <div class="hero__stat">
+            <div class="hero__stat-number" data-count="24">0</div>
+            <div class="hero__stat-label">Horas/dia operando</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="hero__mockup">
+          <!-- Mockup visual do dashboard -->
+          <svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" class="hero__mockup-img">
+            <defs>
+              <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#131f35;stop-opacity:1"/>
+                <stop offset="100%" style="stop-color:#0f1d32;stop-opacity:1"/>
+              </linearGradient>
+              <linearGradient id="teal-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#2cc6b6"/>
+                <stop offset="100%" style="stop-color:#1ea898"/>
+              </linearGradient>
+            </defs>
+            <!-- Background -->
+            <rect width="600" height="420" rx="16" fill="url(#bg-grad)"/>
+            <!-- Sidebar -->
+            <rect x="0" y="0" width="140" height="420" rx="16" fill="#0b1628" opacity="0.5"/>
+            <!-- Logo area -->
+            <circle cx="36" cy="32" r="14" fill="url(#teal-grad)" opacity="0.8"/>
+            <text x="56" y="37" fill="#a8b8cc" font-size="12" font-family="Inter">kanbot</text>
+            <!-- Menu items -->
+            <rect x="16" y="64" width="108" height="32" rx="8" fill="url(#teal-grad)" opacity="0.15"/>
+            <text x="32" y="84" fill="#2cc6b6" font-size="11" font-family="Inter">Dashboard</text>
+            <text x="32" y="116" fill="#6b7f99" font-size="11" font-family="Inter">Kanban</text>
+            <text x="32" y="144" fill="#6b7f99" font-size="11" font-family="Inter">Leads</text>
+            <text x="32" y="172" fill="#6b7f99" font-size="11" font-family="Inter">Conversas</text>
+            <text x="32" y="200" fill="#6b7f99" font-size="11" font-family="Inter">Follow-up</text>
+            <text x="32" y="228" fill="#6b7f99" font-size="11" font-family="Inter">Qualificação</text>
+            <!-- Stats cards -->
+            <rect x="160" y="20" width="200" height="80" rx="12" fill="#1a2a45" opacity="0.6" stroke="#2cc6b6" stroke-opacity="0.1"/>
+            <text x="180" y="48" fill="#a8b8cc" font-size="11" font-family="Inter">Total Interações</text>
+            <text x="180" y="78" fill="#f0f4f8" font-size="24" font-weight="bold" font-family="Outfit">1.551</text>
+            <rect x="380" y="20" width="200" height="80" rx="12" fill="#1a2a45" opacity="0.6" stroke="#2cc6b6" stroke-opacity="0.1"/>
+            <text x="400" y="48" fill="#a8b8cc" font-size="11" font-family="Inter">Total de Leads</text>
+            <text x="400" y="78" fill="#f0f4f8" font-size="24" font-weight="bold" font-family="Outfit">114</text>
+            <!-- Chart area -->
+            <rect x="160" y="120" width="280" height="160" rx="12" fill="#1a2a45" opacity="0.4"/>
+            <text x="180" y="150" fill="#f0f4f8" font-size="13" font-weight="600" font-family="Inter">Novos Leads por Dia</text>
+            <!-- Bar chart -->
+            <rect x="190" y="220" width="20" height="40" rx="4" fill="url(#teal-grad)" opacity="0.7"/>
+            <rect x="220" y="200" width="20" height="60" rx="4" fill="url(#teal-grad)" opacity="0.8"/>
+            <rect x="250" y="210" width="20" height="50" rx="4" fill="url(#teal-grad)" opacity="0.6"/>
+            <rect x="280" y="190" width="20" height="70" rx="4" fill="url(#teal-grad)" opacity="0.9"/>
+            <rect x="310" y="225" width="20" height="35" rx="4" fill="url(#teal-grad)" opacity="0.5"/>
+            <rect x="340" y="180" width="20" height="80" rx="4" fill="url(#teal-grad)"/>
+            <rect x="370" y="205" width="20" height="55" rx="4" fill="url(#teal-grad)" opacity="0.7"/>
+            <rect x="400" y="215" width="20" height="45" rx="4" fill="url(#teal-grad)" opacity="0.6"/>
+            <!-- Tokens panel -->
+            <rect x="460" y="120" width="120" height="160" rx="12" fill="#1a2a45" opacity="0.4"/>
+            <text x="480" y="150" fill="#f0f4f8" font-size="12" font-weight="600" font-family="Inter">Tokens</text>
+            <!-- Donut chart -->
+            <circle cx="520" cy="210" r="35" fill="none" stroke="#1a2a45" stroke-width="8"/>
+            <circle cx="520" cy="210" r="35" fill="none" stroke="url(#teal-grad)" stroke-width="8" stroke-dasharray="155 65" stroke-linecap="round"/>
+            <!-- Kanban preview -->
+            <rect x="160" y="300" width="420" height="100" rx="12" fill="#1a2a45" opacity="0.3"/>
+            <text x="180" y="328" fill="#f0f4f8" font-size="12" font-weight="600" font-family="Inter">Pipeline de Qualificação</text>
+            <!-- Kanban columns -->
+            <rect x="180" y="340" width="90" height="44" rx="6" fill="#0b1628" opacity="0.5"/>
+            <text x="192" y="358" fill="#6b7f99" font-size="8" font-family="Inter">Novo Lead</text>
+            <circle cx="210" cy="372" r="4" fill="#2cc6b6" opacity="0.6"/>
+            <circle cx="222" cy="372" r="4" fill="#2cc6b6" opacity="0.4"/>
+            <rect x="280" y="340" width="90" height="44" rx="6" fill="#0b1628" opacity="0.5"/>
+            <text x="292" y="358" fill="#6b7f99" font-size="8" font-family="Inter">Qualificando</text>
+            <circle cx="310" cy="372" r="4" fill="#f4c430" opacity="0.6"/>
+            <circle cx="322" cy="372" r="4" fill="#f4c430" opacity="0.4"/>
+            <circle cx="334" cy="372" r="4" fill="#f4c430" opacity="0.3"/>
+            <rect x="380" y="340" width="90" height="44" rx="6" fill="#0b1628" opacity="0.5"/>
+            <text x="392" y="358" fill="#6b7f99" font-size="8" font-family="Inter">Aprovada ✓</text>
+            <circle cx="410" cy="372" r="4" fill="#25D366" opacity="0.8"/>
+            <rect x="480" y="340" width="90" height="44" rx="6" fill="#0b1628" opacity="0.5"/>
+            <text x="492" y="358" fill="#6b7f99" font-size="8" font-family="Inter">Reprovada</text>
+            <circle cx="510" cy="372" r="4" fill="#ff6b6b" opacity="0.5"/>
+          </svg>
+        </div>
+
+        <!-- Floating Cards -->
+        <div class="hero__float-card hero__float-card--1">
+          <div class="float-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/><path d="M8 13h8a4 4 0 0 1-8 0"/></svg></div>
+          <div class="float-card__title">IA Respondendo</div>
+          <div class="float-card__value">Em tempo real</div>
+        </div>
+        <div class="hero__float-card hero__float-card--2">
+          <div class="float-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+          <div class="float-card__title">Qualificadas hoje</div>
+          <div class="float-card__value">+23 leads</div>
+        </div>
+        <div class="hero__float-card hero__float-card--3">
+          <div class="float-card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+          <div class="float-card__title">Tempo de resposta</div>
+          <div class="float-card__value">&lt; 3 seg</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-indicator__mouse"></div>
+      <span>Role para baixo</span>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SOCIAL PROOF BAR -->
+  <!-- ============================================ -->
+  <section class="social-proof">
+    <div class="container">
+      <p class="social-proof__label">Empresas que confiam no Kanbot</p>
+      <div class="social-proof__logos">
+        <div class="social-proof__logo"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12l4 8-10 13L2 11l4-8z"/></svg></span> Mucci Semijoias</div>
+        <div class="social-proof__logo"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.09 6.26L20 9.27l-4.5 3.87 1.68 6.88L12 16.77l-5.18 3.25L8.5 13.14 4 9.27l5.91-1.01L12 2z"/></svg></span> Alina Semijoias</div>
+        <div class="social-proof__logo"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C6 4 6 5 6 5s0-1 1.5-1a2.5 2.5 0 0 1 0 5H6z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C18 4 18 5 18 5s0-1-1.5-1a2.5 2.5 0 0 0 0 5h1.5z"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/><path d="M6 12h12"/><path d="M6 22V9"/><path d="M18 22V9"/></svg></span> Optimus Semijoias</div>
+        <div class="social-proof__logo"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span> +30 marcas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- COMO FUNCIONA -->
+  <!-- ============================================ -->
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="section-label">Como Funciona</div>
+      <h2 class="section-title animate-on-scroll">
+        Transforme seu WhatsApp em uma <span class="gradient-text">Máquina de Qualificação</span>
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Em 6 passos simples, o Kanbot automatiza todo o seu processo de recrutamento — da captação à aprovação final.
+      </p>
+
+      <div class="steps-timeline">
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">1. Crie seu processo de recrutamento</h3>
+            <p class="timeline-step__text">Defina etapas como "Novo Contato", "Em Qualificação", "Aprovada". Tudo visual, no formato Kanban.</p>
+          </div>
+        </div>
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">2. Configure perguntas e pontuação</h3>
+            <p class="timeline-step__text">Defina as perguntas-chave e atribua pontos para cada resposta. Você decide quem é qualificada.</p>
+          </div>
+        </div>
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">3. A candidata chega pelo anúncio</h3>
+            <p class="timeline-step__text">O Kanbot inicia o fluxo de perguntas na hora — sem espera, sem atendimento manual.</p>
+          </div>
+        </div>
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/><path d="M8 13h8a4 4 0 0 1-8 0"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">4. A IA entra em ação sob demanda</h3>
+            <p class="timeline-step__text">Se a candidata fizer uma pergunta, a IA responde e depois retoma o fluxo de onde parou. Sem travamentos.</p>
+          </div>
+        </div>
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">5. Pontuação e movimentação automática</h3>
+            <p class="timeline-step__text">O sistema pontua cada resposta e move a lead entre etapas automaticamente no Kanban.</p>
+          </div>
+        </div>
+        <div class="timeline-step animate-on-scroll">
+          <div class="timeline-step__marker"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5C6 4 6 5 6 5s0-1 1.5-1a2.5 2.5 0 0 1 0 5H6z"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5C18 4 18 5 18 5s0-1-1.5-1a2.5 2.5 0 0 0 0 5h1.5z"/><path d="M4 22h16"/><path d="M10 22V8h4v14"/></svg></span></div>
+          <div class="timeline-step__content">
+            <h3 class="timeline-step__title">6. Você fala só com quem passou no filtro</h3>
+            <p class="timeline-step__text">Invista seu tempo apenas nas revendedoras que atingiram a pontuação mínima. Máxima eficiência, zero desperdício.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PARA QUEM É -->
+  <!-- ============================================ -->
+  <section class="for-who" id="para-quem">
+    <div class="container">
+      <div class="section-label">Para Quem É</div>
+      <h2 class="section-title animate-on-scroll">
+        Ideal para quem quer <span class="gradient-text">crescer com a equipe certa</span>
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Se você reconhece algum desses cenários, o Kanbot foi feito para resolver exatamente isso.
+      </p>
+
+      <div class="for-who__grid">
+        <div class="for-who__card animate-on-scroll">
+          <div class="for-who__card-icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 18l3-10 5 6 2-8 2 8 5-6 3 10H2z"/><path d="M2 18h20v2H2z"/></svg></span></div>
+          <div>
+            <h3 class="for-who__card-title">Donos(as) de marcas no consignado</h3>
+            <p class="for-who__card-text">Você vende no modelo consignado e precisa de revendedoras comprometidas com o perfil certo para sua marca.</p>
+          </div>
+        </div>
+        <div class="for-who__card animate-on-scroll">
+          <div class="for-who__card-icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></span></div>
+          <div>
+            <h3 class="for-who__card-title">Quem sofre com alta rotatividade</h3>
+            <p class="for-who__card-text">Recruta 10 e perde 9 no primeiro mês. O Kanbot filtra antes para você parar de formar quem não tem perfil.</p>
+          </div>
+        </div>
+        <div class="for-who__card animate-on-scroll">
+          <div class="for-who__card-icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></div>
+          <div>
+            <h3 class="for-who__card-title">Negócios com tráfego pago ativo</h3>
+            <p class="for-who__card-text">Investe em anúncios e perde leads (e dinheiro) por demorar no atendimento. O bot responde em segundos, 24/7.</p>
+          </div>
+        </div>
+        <div class="for-who__card animate-on-scroll">
+          <div class="for-who__card-icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></span></div>
+          <div>
+            <h3 class="for-who__card-title">Quem quer previsibilidade</h3>
+            <p class="for-who__card-text">Cansou de "apagar incêndios" no recrutamento. Quer um processo que funcione no piloto automático.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="for-who__highlight animate-on-scroll">
+        <p>Seu time ainda gasta horas respondendo "Olá, tenho interesse"? Com o Kanbot, só chega até você quem provou ter potencial — respondendo ao seu filtro automaticamente.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- IMPACTO E SIMULAÇÃO (6x1 e ROI) -->
+  <!-- ============================================ -->
+  <section class="impact-section" id="impacto">
+    <div class="container">
+      <div class="impact-grid">
+        
+        <!-- Bloco 1: Escala 6x1 -->
+        <div class="impact-card animate-on-scroll">
+          <div class="impact-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span></div>
+          <h3 class="impact-card__title">A Solução Definitiva para o Fim da Escala 6x1</h3>
+          <p class="impact-card__text">
+            Com as mudanças nas leis trabalhistas e o possível <strong>fim da escala 6x1</strong>, manter atendimento humano de ponta aos finais de semana custará o dobro para a sua empresa. O problema? É exatamente no sábado e no domingo que seus anúncios trazem os melhores leads.
+          </p>
+          <p class="impact-card__text highlight-text">
+            O <strong>Funcionário Digital Kanbot</strong> blinda a sua operação: ele trabalha 24 horas por dia, 7 dias por semana, sem férias, sem passivo trabalhista e com zero reclamações. Enquanto sua equipe descansa (com justiça), o Kanbot atende, qualifica e agenda as melhores revendedoras para segunda-feira.
+          </p>
+        </div>
+
+        <!-- Bloco 2: Simulação de Qualificação e ROI -->
+        <div class="impact-card animate-on-scroll">
+          <div class="impact-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span></div>
+          <h3 class="impact-card__title">Pare de Perder Tempo com Curiosos. Filtre o Perfil Ideal.</h3>
+          <p class="impact-card__text">
+            O Kanbot permite selecionar <strong>somente as candidatas que atingem a pontuação mínima</strong> exigida pelo seu negócio. Se a pessoa não tem o perfil adequado, ela é filtrada automaticamente pelo sistema.
+          </p>
+          <div class="impact-simulation">
+            <h4 class="simulation-title">O Poder do Perfil Ideal</h4>
+            <p class="impact-card__text" style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 12px; line-height: 1.5;">
+              Se o seu negócio tem hoje um ticket médio geral de vendas de <strong>R$ 400 a R$ 600</strong> por revendedora, o gargalo pode estar no recrutamento sem filtro.
+            </p>
+            <p class="impact-card__text" style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.5;">
+              Ao automatizar a triagem com o Kanbot, você atrai mulheres que já têm público e experiência prévia. O resultado? As novas revendedoras passam a pegar mercadorias em consignado repassando, logo de cara, tickets de <strong>R$ 1.200 ou mais</strong>, elevando todo o padrão e a escala do seu faturamento.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- DIFERENCIAIS -->
+  <!-- ============================================ -->
+  <section class="differentials" id="diferenciais">
+    <div class="container">
+      <div class="section-label">Por que é Diferente</div>
+      <h2 class="section-title animate-on-scroll">
+        Um sistema de filtragem <span class="gradient-text">pensado para revenda</span>
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Não é um chatbot genérico. É uma máquina de qualificação construída para quem opera com equipe de revendedoras.
+      </p>
+
+      <div class="diff-grid">
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span></div>
+          <h3 class="diff-card__title">Funil com Pontuação</h3>
+          <p class="diff-card__text">Perguntas inteligentes com sistema de score. Você define quem passa e quem não tem perfil.</p>
+        </div>
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><rect x="4" y="4" width="16" height="16" rx="2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/><path d="M8 13h8a4 4 0 0 1-8 0"/></svg></span></div>
+          <h3 class="diff-card__title">IA que Não Trava</h3>
+          <p class="diff-card__text">A inteligência artificial tira dúvidas sem interromper o fluxo de qualificação. Depois retoma automaticamente.</p>
+        </div>
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span></div>
+          <h3 class="diff-card__title">Classificação Automática</h3>
+          <p class="diff-card__text">Qualificada ou Não Qualificada — o sistema decide baseado nos critérios que VOCÊ definiu.</p>
+        </div>
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span></div>
+          <h3 class="diff-card__title">Templates Prontos</h3>
+          <p class="diff-card__text">Modelos de funil validados por marcas reais. Configure em minutos e comece a filtrar hoje.</p>
+        </div>
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg></span></div>
+          <h3 class="diff-card__title">Escalável</h3>
+          <p class="diff-card__text">De 50 a milhares de leads por mês. A plataforma cresce junto com a sua operação.</p>
+        </div>
+        <div class="diff-card animate-on-scroll">
+          <div class="diff-card__icon"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg></span></div>
+          <h3 class="diff-card__title">Reativação Automática</h3>
+          <p class="diff-card__text">Leads que pararam no meio do funil? O Kanbot reativa automaticamente para não perder oportunidades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PLANOS -->
+  <!-- ============================================ -->
+  <section class="plans" id="planos">
+    <div class="container">
+      <div class="section-label">Planos</div>
+      <h2 class="section-title animate-on-scroll">
+        Escolha o plano ideal <span class="gradient-text">para o seu momento</span>
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Invista menos do que um salário de atendente e ganhe uma equipe digital que nunca dorme.
+      </p>
+
+      <div class="plans-grid">
+        <!-- Plano Iniciante -->
+        <div class="plan-card animate-on-scroll">
+          <div class="plan-card__name">Iniciante</div>
+          <div class="plan-card__price">
+            <span class="plan-card__price-currency">R$</span>
+            <span class="plan-card__price-value">147</span>
+            <span class="plan-card__price-period">/mês</span>
+          </div>
+          <p class="plan-card__description">Plano ideal para quem está começando a automatizar o recrutamento.</p>
+          <div class="plan-card__features">
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Até 150 leads/mês
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>100.000 tokens iniciais</strong>
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte por WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Automações de WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              CRM Kanban completo
+            </div>
+          </div>
+          <a href="#agendar" class="plan-card__cta plan-card__cta--outline">Agendar Demonstração</a>
+        </div>
+
+        <!-- Plano Semi-profissional (Featured) -->
+        <div class="plan-card featured animate-on-scroll">
+          <div class="plan-card__badge">Mais Popular</div>
+          <div class="plan-card__name">Semi-profissional</div>
+          <div class="plan-card__price">
+            <span class="plan-card__price-currency">R$</span>
+            <span class="plan-card__price-value">247</span>
+            <span class="plan-card__price-period">/mês</span>
+          </div>
+          <p class="plan-card__description">Para operações em crescimento que precisam de mais volume.</p>
+          <div class="plan-card__features">
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Até 250 leads/mês
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>500.000 tokens iniciais</strong>
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte por WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Automações de WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              CRM Kanban completo
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Templates de qualificação
+            </div>
+          </div>
+          <a href="#agendar" class="plan-card__cta plan-card__cta--primary">Agendar Demonstração</a>
+        </div>
+
+        <!-- Plano Profissional -->
+        <div class="plan-card animate-on-scroll">
+          <div class="plan-card__name">Profissional</div>
+          <div class="plan-card__price">
+            <span class="plan-card__price-currency">R$</span>
+            <span class="plan-card__price-value">597</span>
+            <span class="plan-card__price-period">/mês</span>
+          </div>
+          <p class="plan-card__description">Plano completo para operações que escalam com volume alto.</p>
+          <div class="plan-card__features">
+            <div class="plan-card__feature plan-card__feature--highlight">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>Leads Ilimitados</strong>
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <strong>2.000.000 tokens iniciais</strong>
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Suporte por WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Automações de WhatsApp
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              CRM Kanban completo
+            </div>
+            <div class="plan-card__feature">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Templates + onboarding VIP
+            </div>
+          </div>
+          <a href="#agendar" class="plan-card__cta plan-card__cta--outline">Agendar Demonstração</a>
+        </div>
+      </div>
+
+      <p class="plans__note animate-on-scroll">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="display:inline;vertical-align:-2px;filter:drop-shadow(0 0 4px rgba(44,198,182,0.5))"><path d="M12 2l2.09 6.26L20 9.27l-4.5 3.87 1.68 6.88L12 16.77l-5.18 3.25L8.5 13.14 4 9.27l5.91-1.01L12 2z"/></svg> Todos os planos incluem funil de perguntas automáticas via WhatsApp, CRM Kanban visual e IA para resposta de dúvidas. Configuração feita pela nossa equipe.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- DEPOIMENTOS -->
+  <!-- ============================================ -->
+  <section class="testimonials" id="depoimentos">
+    <div class="container">
+      <div class="section-label">Resultados Reais</div>
+      <h2 class="section-title animate-on-scroll">
+        Marcas que escalam suas equipes <span class="gradient-text">no piloto automático</span>
+      </h2>
+      <p class="section-subtitle animate-on-scroll">
+        Veja como empresárias reais transformaram seu recrutamento com o Kanbot.
+      </p>
+
+      <div class="testimonials-grid">
+        <!-- Mucci Semijoias -->
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__quote">
+            Antes do Kanbot, a gente perdia manhãs inteiras no WhatsApp fazendo triagem manual. Hoje recebo uma lista pronta de candidatas que realmente querem revender. Em 30 dias, recrutamos 38 revendedoras qualificadas — e o turnover caiu pela metade. Foi a melhor decisão que tomamos pro crescimento da Mucci.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">AT</div>
+            <div>
+              <div class="testimonial-card__name">Adriana Tamião</div>
+              <div class="testimonial-card__role">Fundadora — Mucci Semijoias</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alina Semijoias -->
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__quote">
+            A gente tinha medo do "robô" espantar as candidatas. Aconteceu o contrário — a experiência ficou mais profissional e a qualificação mais objetiva e eficiente. A IA responde dúvidas na hora, e quando chega pra mim, já sei nome, cidade, experiência e pontuação. Usamos um dos modelos prontos, mudando algumas coisinhas e conseguimos 75 revendedoras qualificadas em 30 dias.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">CI</div>
+            <div>
+              <div class="testimonial-card__name">Cíntia</div>
+              <div class="testimonial-card__role">Gerente — Alina Semijoias</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dabela Semijoias -->
+        <div class="testimonial-card animate-on-scroll">
+          <div class="testimonial-card__stars">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <p class="testimonial-card__quote">
+            A gente escalou de 15 para 50 revendedoras ativas em 2 meses. Antes, eu precisava de 2 atendentes só pra responder "Olá, tenho interesse". Com o Kanbot, economizamos R$ 4.200/mês em mão de obra e a qualidade das revendedoras que entram agora é incomparável. O retorno se pagou na primeira semana.
+          </p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">GG</div>
+            <div>
+              <div class="testimonial-card__name">Gabriel Ganem</div>
+              <div class="testimonial-card__role">Diretor — Dabela Semijoias</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTORNO DE OBJEÇÕES -->
+  <!-- ============================================ -->
+  <section class="objections">
+    <div class="container">
+      <div class="section-label">Sem Dúvidas</div>
+      <h2 class="section-title animate-on-scroll">
+        E se fosse mais fácil escalar <span class="gradient-text">sem trabalhar mais?</span>
+      </h2>
+
+      <div class="objections-grid">
+        <div class="objection-card animate-on-scroll">
+          <p class="objection-card__question"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> "Já tenho revendedoras"</p>
+          <p class="objection-card__answer">Ótimo. Mas será que elas têm o perfil certo? E se você pudesse filtrar automaticamente as melhores — e só investir tempo em quem realmente vai performar?</p>
+        </div>
+        <div class="objection-card animate-on-scroll">
+          <p class="objection-card__question"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> "E se for complicado?"</p>
+          <p class="objection-card__answer">A plataforma é simples e visual. A IA faz o atendimento e você só configura o funil de perguntas. Nós fazemos toda a implantação por você.</p>
+        </div>
+        <div class="objection-card animate-on-scroll">
+          <p class="objection-card__question"><span class="icon-glow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span> "É caro?"</p>
+          <p class="objection-card__answer">É bem menos do que você imagina. Compare: um atendente custa R$ 2.000+/mês. O Kanbot começa em R$ 147 e trabalha 24 horas, sem férias, sem faltas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FORMULÁRIO DE AGENDAMENTO -->
+  <!-- ============================================ -->
+  <section class="schedule-form" id="agendar">
+    <div class="schedule-form__bg-orb"></div>
+    <div class="container">
+      <div class="schedule-form__wrapper">
+        <div class="schedule-form__content animate-on-scroll">
+          <div class="section-label">Agende sua Reunião</div>
+          <h2 class="schedule-form__title">
+            Descubra como o Kanbot pode <span class="gradient-text">transformar seu recrutamento</span>
+          </h2>
+          <p class="schedule-form__subtitle">
+            Em uma conversa rápida de 20 minutos, nosso especialista vai entender sua operação e mostrar exatamente como o Kanbot se encaixa no seu negócio.
+          </p>
+          <div class="schedule-form__benefits">
+            <div class="schedule-form__benefit">
+              <div class="schedule-form__benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Demonstração ao vivo e sem compromisso
+            </div>
+            <div class="schedule-form__benefit">
+              <div class="schedule-form__benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Diagnóstico personalizado da sua operação
+            </div>
+            <div class="schedule-form__benefit">
+              <div class="schedule-form__benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Demonstração ao vivo da plataforma
+            </div>
+            <div class="schedule-form__benefit">
+              <div class="schedule-form__benefit-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Plano de implementação sob medida
+            </div>
+          </div>
+        </div>
+
+        <div class="schedule-form__card animate-on-scroll">
+          <div id="form-container">
+            <h3 class="schedule-form__card-title">Agende sua Demonstração Gratuita</h3>
+            <p class="schedule-form__card-subtitle">Preencha os dados abaixo e entraremos em contato</p>
+            <form id="schedule-form-el">
+              <div class="form-group">
+                <label for="form-name">Seu Nome</label>
+                <input type="text" id="form-name" name="name" placeholder="Como podemos te chamar?" required>
+              </div>
+              <div class="form-group">
+                <label for="form-email">E-mail</label>
+                <input type="email" id="form-email" name="email" placeholder="seu@email.com" required>
+              </div>
+              <div class="form-group">
+                <label for="form-whatsapp">WhatsApp</label>
+                <input type="tel" id="form-whatsapp" name="whatsapp" placeholder="(00) 00000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="form-company">Nome da Marca/Empresa</label>
+                <input type="text" id="form-company" name="company" placeholder="Ex: Mucci Semijoias">
+              </div>
+              <div class="form-group">
+                <label for="form-segment">Segmento</label>
+                <select id="form-segment" name="segment">
+                  <option value="">Selecione seu segmento</option>
+                  <option value="semijoias">Semijoias</option>
+                  <option value="roupas">Roupas / Moda</option>
+                  <option value="cosmeticos">Cosméticos</option>
+                  <option value="acessorios">Acessórios</option>
+                  <option value="outro">Outro</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-traffic">Você já investe em Tráfego Pago?</label>
+                <select id="form-traffic" name="traffic" required>
+                  <option value="">Selecione uma opção</option>
+                  <option value="sim">Sim, anuncio no Meta/Google Ads</option>
+                  <option value="nao-mas-vou">Não, mas pretendo começar este mês</option>
+                  <option value="nao">Não invisto</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="form-leads">Quantas leads recebe por mês?</label>
+                <select id="form-leads" name="leads_volume">
+                  <option value="">Selecione o volume</option>
+                  <option value="ate-50">Até 50 leads</option>
+                  <option value="50-150">50 a 150 leads</option>
+                  <option value="150-500">150 a 500 leads</option>
+                  <option value="500+">Mais de 500 leads</option>
+                </select>
+              </div>
+              <button type="submit" class="form-submit" id="form-submit-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/></svg> Agendar Minha Demonstração Gratuita
+              </button>
+              <p class="form-privacy">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                Seus dados estão seguros. Não enviamos spam.
+              </p>
+            </form>
+          </div>
+
+          <!-- Success State -->
+          <div class="form-success" id="form-success">
+            <div class="form-success__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3 class="form-success__title">Demonstração Agendada! <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" style="display:inline;vertical-align:-3px;filter:drop-shadow(0 0 6px rgba(44,198,182,0.6))"><path d="M12 2l2.09 6.26L20 9.27l-4.5 3.87 1.68 6.88L12 16.77l-5.18 3.25L8.5 13.14 4 9.27l5.91-1.01L12 2z"/></svg></h3>
+            <p class="form-success__text">Recebemos seus dados com sucesso. Nossa equipe entrará em contato pelo WhatsApp em até 24 horas para confirmar o melhor horário.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FAQ -->
+  <!-- ============================================ -->
+  <section class="faq" id="duvidas">
+    <div class="container">
+      <div class="section-label">Dúvidas Frequentes</div>
+      <h2 class="section-title animate-on-scroll">
+        Perguntas que todo empresário faz <span class="gradient-text">antes de começar</span>
+      </h2>
+
+      <div class="faq-list">
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-1">
+            Preciso ter CRM para usar o Kanbot?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Não. O Kanbot já funciona como um CRM visual (Kanban) independente. Você não precisa de nenhuma ferramenta adicional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-2">
+            O Kanbot "conversa" com as pessoas?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Ele conduz a qualificação com um funil de perguntas que você cria. A IA só interfere se a lead fizer uma pergunta — e depois volta ao fluxo normalmente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-3">
+            Preciso instalar alguma coisa?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Não. A gente configura tudo pra você, direto no seu WhatsApp Business. Zero instalação, zero complicação.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-4">
+            O que é esse tal de Kanban?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>É um painel visual, com colunas e etapas como "Novo lead", "Em Qualificação", "Aprovado" etc. Ajuda você a ver todo o processo em tempo real, de forma simples e intuitiva.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-5">
+            Consigo mudar as perguntas e a pontuação?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Sim, sempre que quiser. Você tem controle total do seu filtro de qualificação — pode ajustar perguntas, pontuação e critérios a qualquer momento.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-6">
+            Funciona para o meu nicho?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Sim. O Kanbot é focado em operações de revenda, especialmente consignado — semijoias, roupas, cosméticos — ou qualquer negócio que dependa de uma equipe de revendedoras.</p>
+          </div>
+        </div>
+
+        <div class="faq-item animate-on-scroll">
+          <button class="faq-item__question" id="faq-q-7">
+            Tem suporte?
+            <div class="faq-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+            </div>
+          </button>
+          <div class="faq-item__answer">
+            <p>Temos uma equipe dedicada via WhatsApp pra te ajudar no que for preciso. Do onboarding às dúvidas do dia a dia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CTA FINAL -->
+  <!-- ============================================ -->
+  <section class="final-cta">
+    <div class="final-cta__bg-glow"></div>
+    <div class="container">
+      <div class="section-label">Última Chamada</div>
+      <h2 class="final-cta__title animate-on-scroll">
+        Chega de perder tempo com quem <span class="gradient-text">não tem perfil para vender.</span>
+      </h2>
+      <p class="final-cta__subtitle animate-on-scroll">
+        Com o Kanbot, você automatiza seu filtro de recrutamento, qualifica com pontuação e foca seu tempo apenas em quem realmente pode aumentar seu faturamento.
+      </p>
+      <div class="final-cta__actions animate-on-scroll">
+        <a href="#agendar" class="btn-primary" id="final-cta-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Agendar Minha Demonstração Agora
+        </a>
+        <a href="https://wa.me/5500000000000" target="_blank" class="btn-secondary" id="final-cta-whatsapp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar com Especialista
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__logo">
+        <img src="assets/logo_cropped.png" alt="Kanbot">
+      </div>
+      <div class="footer__links">
+        <a href="#como-funciona">Como Funciona</a>
+        <a href="#planos">Planos</a>
+        <a href="#depoimentos">Resultados</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#">Termos de Uso</a>
+        <a href="#">Política de Privacidade</a>
+      </div>
+      <p class="footer__copy">© 2025 Kanbot. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- WHATSAPP FLOAT -->
+  <!-- ============================================ -->
+  <a href="https://wa.me/5500000000000" target="_blank" class="whatsapp-float" id="whatsapp-float" aria-label="Fale pelo WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- ============================================ -->
+  <!-- JAVASCRIPT -->
+  <!-- ============================================ -->
+  <script>
+    // ==============================
+    // Header Scroll Effect
+    // ==============================
+    const header = document.getElementById('header');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+      lastScroll = currentScroll;
+    });
+
+    // ==============================
+    // Hamburger Menu
+    // ==============================
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em link
+    document.querySelectorAll('.header__nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        nav.classList.remove('active');
+      });
+    });
+
+    // ==============================
+    // Scroll Animations (Intersection Observer)
+    // ==============================
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          // Stagger delay baseado no index dentro do grupo
+          const siblings = entry.target.parentElement.querySelectorAll('.animate-on-scroll');
+          let sibIndex = 0;
+          siblings.forEach((sib, i) => { if (sib === entry.target) sibIndex = i; });
+          
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, sibIndex * 100);
+          
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(el => {
+      observer.observe(el);
+    });
+
+    // ==============================
+    // Counter Animation
+    // ==============================
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const target = parseInt(el.getAttribute('data-count'));
+          const duration = 2000;
+          const start = performance.now();
+          
+          const updateCount = (now) => {
+            const elapsed = now - start;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out quad
+            const easeProgress = 1 - (1 - progress) * (1 - progress);
+            const current = Math.floor(easeProgress * target);
+            
+            // Formatação
+            if (target >= 1000) {
+              el.textContent = current.toLocaleString('pt-BR') + '+';
+            } else if (el.closest('.hero__stat') && el.parentElement.querySelector('.hero__stat-label').textContent.includes('%')) {
+              el.textContent = current + '%';
+            } else if (el.closest('.hero__stat') && el.parentElement.querySelector('.hero__stat-label').textContent.includes('Horas')) {
+              el.textContent = current + 'h';
+            } else {
+              el.textContent = current.toLocaleString('pt-BR') + '+';
+            }
+            
+            if (progress < 1) {
+              requestAnimationFrame(updateCount);
+            }
+          };
+          
+          requestAnimationFrame(updateCount);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('[data-count]').forEach(el => {
+      counterObserver.observe(el);
+    });
+
+    // ==============================
+    // FAQ Accordion
+    // ==============================
+    document.querySelectorAll('.faq-item__question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+        
+        // Fechar todos
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        
+        // Abrir o clicado (se não estava ativo)
+        if (!isActive) {
+          item.classList.add('active');
+        }
+      });
+    });
+
+    // ==============================
+    // Form Submission
+    // ==============================
+    const form = document.getElementById('schedule-form-el');
+    const formContainer = document.getElementById('form-container');
+    const formSuccess = document.getElementById('form-success');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      // Simular envio
+      const submitBtn = document.getElementById('form-submit-btn');
+      submitBtn.textContent = 'Enviando...';
+      submitBtn.disabled = true;
+      
+      setTimeout(() => {
+        formContainer.style.display = 'none';
+        formSuccess.classList.add('active');
+      }, 1500);
+    });
+
+    // ==============================
+    // WhatsApp Mask
+    // ==============================
+    const whatsappInput = document.getElementById('form-whatsapp');
+    whatsappInput.addEventListener('input', (e) => {
+      let value = e.target.value.replace(/\D/g, '');
+      if (value.length > 11) value = value.slice(0, 11);
+      
+      if (value.length > 0) {
+        value = '(' + value;
+      }
+      if (value.length > 3) {
+        value = value.slice(0, 3) + ') ' + value.slice(3);
+      }
+      if (value.length > 10) {
+        value = value.slice(0, 10) + '-' + value.slice(10);
+      }
+      
+      e.target.value = value;
+    });
+
+    // ==============================
+    // Smooth scroll for CTA buttons
+    // ==============================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // ==============================
+    // Parallax-like mouse tracking on hero
+    // ==============================
+    const heroSection = document.querySelector('.hero');
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      heroSection.style.setProperty('--mouse-x', x + '%');
+      heroSection.style.setProperty('--mouse-y', y + '%');
+    });
+
+    // ==============================
+    // Abrir primeiro FAQ por padrão
+    // ==============================
+    document.querySelector('.faq-item').classList.add('active');
+  </script>
+
+</body>
+</html>
