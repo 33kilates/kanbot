@@ -1101,7 +1101,7 @@
 
       // 1. Disparar Pixel Frontend
       if (typeof fbq !== 'undefined') {
-        fbq('track', 'Lead', {}, { eventID: eventId });
+        fbq('track', 'Contact', {}, { eventID: eventId });
       }
 
       // 2. Disparar CAPI (Servidor)
@@ -1109,7 +1109,7 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          event_name: 'Lead',
+          event_name: 'Contact',
           event_id: eventId,
           event_source_url: window.location.href,
           email: emailInput,

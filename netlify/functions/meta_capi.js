@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     const payload = {
       data: [
         {
-          event_name: data.event_name || 'Lead',
+          event_name: data.event_name || 'Contact',
           event_time: Math.floor(Date.now() / 1000),
           action_source: "website",
           event_id: data.event_id,
