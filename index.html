@@ -20,6 +20,25 @@
 
   <!-- Favicon (usando o logo) -->
   <link rel="icon" type="image/png" href="assets/logo_cropped.png">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2241113573369953');
+  fbq('track', 'PageView');
+  fbq('track', 'ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2241113573369953&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -1069,6 +1088,31 @@
       const submitBtn = document.getElementById('form-submit-btn');
       submitBtn.textContent = 'Enviando...';
       submitBtn.disabled = true;
+
+      // Recuperar dados para API de Conversões (Hash feito no backend)
+      const emailInput = document.getElementById('form-email').value;
+      const phoneInput = document.getElementById('form-whatsapp').value;
+      
+      // Gerar event_id para desduplicação exata
+      const eventId = 'lead_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
+
+      // 1. Disparar Pixel Frontend (Navegador)
+      if (typeof fbq !== 'undefined') {
+        fbq('track', 'Lead', {}, { eventID: eventId });
+      }
+
+      // 2. Disparar CAPI (Servidor via Netlify Function oculta)
+      fetch('/.netlify/functions/meta_capi', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          event_name: 'Lead',
+          event_id: eventId,
+          event_source_url: window.location.href,
+          email: emailInput,
+          phone: phoneInput
+        })
+      }).catch(err => console.error('CAPI Error:', err));
       
       setTimeout(() => {
         formContainer.style.display = 'none';
