@@ -1084,24 +1084,27 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       
-      // Simular envio
       const submitBtn = document.getElementById('form-submit-btn');
       submitBtn.textContent = 'Enviando...';
       submitBtn.disabled = true;
 
-      // Recuperar dados para API de Conversões (Hash feito no backend)
+      // Recuperar dados do formulário
+      const nameInput = document.getElementById('form-name').value;
       const emailInput = document.getElementById('form-email').value;
       const phoneInput = document.getElementById('form-whatsapp').value;
+      const companyInput = document.getElementById('form-company').value;
+      const segmentInput = document.getElementById('form-segment').value;
+      const trafficInput = document.getElementById('form-traffic').value;
+      const leadsInput = document.getElementById('form-leads').value;
       
-      // Gerar event_id para desduplicação exata
       const eventId = 'lead_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
 
-      // 1. Disparar Pixel Frontend (Navegador)
+      // 1. Disparar Pixel Frontend
       if (typeof fbq !== 'undefined') {
         fbq('track', 'Lead', {}, { eventID: eventId });
       }
 
-      // 2. Disparar CAPI (Servidor via Netlify Function oculta)
+      // 2. Disparar CAPI (Servidor)
       fetch('/.netlify/functions/meta_capi', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -1113,11 +1116,31 @@
           phone: phoneInput
         })
       }).catch(err => console.error('CAPI Error:', err));
+
+      // 3. Enviar notificação por E-mail via FormSubmit API (Gratuito, sem backend pesado)
+      fetch("https://formsubmit.co/ajax/kanbotcrm@gmail.com", {
+        method: "POST",
+        headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+            Nome: nameInput,
+            Email: emailInput,
+            WhatsApp: phoneInput,
+            Empresa: companyInput,
+            Segmento: segmentInput,
+            TrafegoPago: trafficInput,
+            VolumeLeads: leadsInput,
+            _subject: "Novo Lead Kanbot: " + nameInput
+        })
+      }).catch(err => console.error('Email Error:', err));
       
+      // 4. Redirecionar para WhatsApp do Comercial com mensagem pré-formatada
       setTimeout(() => {
-        formContainer.style.display = 'none';
-        formSuccess.classList.add('active');
-      }, 1500);
+        const waText = encodeURIComponent(`Olá, me chamo ${nameInput}${companyInput ? ` da empresa ${companyInput}` : ''}. Preenchi o formulário no site e gostaria de agendar a demonstração do Kanbot.`);
+        window.location.href = `https://wa.me/5521991417784?text=${waText}`;
+      }, 1000);
     });
 
     // ==============================
